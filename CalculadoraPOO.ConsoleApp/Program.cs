@@ -31,6 +31,13 @@ namespace CalculadoraPOO.ConsoleApp
                 {
                     break;
                 }
+                
+                if (operacao.ValidaMenu()) {
+                    Console.WriteLine("Opção Inválida!");
+                    Console.ReadLine();
+
+                    continue;
+                }
 
                 operacao.InserirNumeros();
               
