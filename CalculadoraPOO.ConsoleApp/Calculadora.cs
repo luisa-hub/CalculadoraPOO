@@ -33,6 +33,12 @@ namespace CalculadoraPOO.ConsoleApp
                 "\n6 - Sair do programa");
 
         }
+        
+          internal bool ValidaMenu()
+        {
+            return !opcao.Equals(1) && !opcao.Equals(2) && !opcao.Equals(3) && !opcao.Equals(4)
+                                 && !opcao.Equals(5) && !opcao.Equals(6);
+        }
 
 
         internal void VisualizarOperacoes() {
